@@ -6,8 +6,8 @@ Repositori terdiri atas dua modul analisis yang saling melengkapi:
 
 | Modul | Fokus | Skrip utama |
 |---|---|---|
-| [`prediksi-titik-ml/`](prediksi-titik-ml/) | Prediksi titik + validasi silang 5 lipatan + analisis sisaan | `empirical_ml_only.py`, `simulation_ml_only.py` |
-| [`selang-prediksi-konformal/`](selang-prediksi-konformal/) | Selang prediksi konformal Jackknife & Jackknife+ | `run_all.py` |
+| [`prediksi-titik/`](prediksi-titik/) | Prediksi titik + validasi silang 5 lipatan + analisis sisaan | `empirical_ml_only.py`, `simulation_ml_only.py` |
+| [`selang-prediksi/`](selang-prediksi/) | Selang prediksi konformal Jackknife & Jackknife+ | `run_all.py` |
 
 ---
 
