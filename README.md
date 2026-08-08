@@ -11,7 +11,7 @@ Repositori terdiri atas dua modul analisis yang saling melengkapi:
 
 ---
 
-## 1. `prediksi-titik-ml/` — Prediksi Titik dengan CV 5 Lipatan dan Sisaan
+## 1. `prediksi-titik/` — Prediksi Titik dengan CV 5 Lipatan dan Sisaan
 
 Analisis prediksi titik EXPEND pada data empiris dan simulasi, tanpa selang prediksi.
 
@@ -24,7 +24,7 @@ Analisis prediksi titik EXPEND pada data empiris dan simulasi, tanpa selang pred
 **Cara menjalankan:**
 
 ```bash
-cd prediksi-titik-ml
+cd prediksi-titik
 
 # Evaluasi data empiris
 python empirical_ml_only.py
@@ -40,7 +40,7 @@ python simulation_ml_only.py
 
 ---
 
-## 2. `selang-prediksi-konformal/` — Selang Prediksi Jackknife & Jackknife+
+## 2. `selang-prediksi/` — Selang Prediksi Jackknife & Jackknife+
 
 Analisis selang prediksi konformal untuk data empiris (Subbab 3.4.2) dan data simulasi (Subbab 3.4.1).
 
@@ -53,7 +53,7 @@ Analisis selang prediksi konformal untuk data empiris (Subbab 3.4.2) dan data si
 **Cara menjalankan:**
 
 ```bash
-cd selang-prediksi-konformal
+cd selang-prediksi
 python run_all.py            # empiris + simulasi (konfigurasi penuh)
 python empirical_analysis.py # hanya data empiris
 python simulation_analysis.py # hanya simulasi
@@ -70,13 +70,13 @@ python simulation_analysis.py # hanya simulasi
 ```
 .
 ├── README.md
-├── prediksi-titik-ml/
+├── prediksi-titik/
 │   ├── empirical_ml_only.py        # Evaluasi empiris: test set + CV 5 lipatan + plot sisaan
 │   ├── simulation_ml_only.py       # Evaluasi simulasi (tanpa selang prediksi)
 │   ├── ml_common.py                # Model factory, run_models, cross_validate_model
 │   ├── susenas_preprocessing.py    # Praproses & encoding data Susenas
 │   └── README_transformasi_log.txt
-└── selang-prediksi-konformal/
+└── selang-prediksi/
     ├── run_all.py                  # Menjalankan seluruh analisis empiris + simulasi
     ├── empirical_analysis.py       # Selang Jackknife/Jackknife+ pada data empiris
     ├── simulation_analysis.py      # Selang Jackknife/Jackknife+ pada data simulasi
